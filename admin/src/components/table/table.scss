@@ -1,0 +1,53 @@
+.table {
+  .cellWrapper {
+     display: flex;
+     align-items: center;
+ 
+     .image {
+       width: 32px;
+       height: 32px;
+       border-radius: 50%;
+       margin-right: 10px;
+       object-fit: cover;
+     }
+  }
+ 
+  .status {
+     padding: 5px;
+     border-radius: 5px;
+ 
+     &.Approved {
+       color: green;
+       background-color: rgba(0, 128, 0, 0.151);
+     }
+     &.Pending {
+       color: goldenrod;
+       background-color: rgba(189, 189, 3, 0.103);
+     }
+  }
+ }
+ 
+ // Media query for tablets and larger devices
+ @media (min-width: 768px) {
+  .table {
+     .cellWrapper {
+       .image {
+         width: 48px;
+         height: 48px;
+       }
+     }
+  }
+ }
+ 
+ // Media query for desktops and larger devices
+ @media (min-width: 1024px) {
+  .table {
+     .cellWrapper {
+       .image {
+         width: 64px;
+         height: 64px;
+       }
+     }
+  }
+ }
+ 

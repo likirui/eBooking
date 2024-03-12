@@ -1,0 +1,56 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; // Light background for a modern look
+ }
+ 
+ .lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; // Increased gap for better spacing
+  padding: 20px; // Added padding for the container
+  background-color: white; // White background for the form
+  border-radius: 10px; // Rounded corners for a modern aesthetic
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  width: 100%; // Full width for mobile responsiveness
+  max-width: 400px; // Max width for larger screens
+  margin: auto; // Center the form
+ }
+ 
+ .lInput {
+  height: 40px; // Increased height for better usability
+  padding: 10px;
+  border: 1px solid #e0e0e0; // Soft border
+  border-radius: 5px; // Rounded corners
+  font-size: 16px; // Increased font size for better readability
+  transition: border-color 0.3s ease; // Smooth transition for border color
+ }
+ 
+ .lInput:focus {
+  border-color: #0071c2; // Change border color on focus
+  outline: none; // Remove default outline
+ }
+ 
+ .lButton {
+  border: none;
+  padding: 12px 24px; // Increased padding for better click area
+  background-color: #0071c2; // Primary color
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; // Smooth transition for background color
+  margin-top: 15px; // Added margin for better spacing
+ }
+ 
+ .lButton:hover {
+  background-color: #0056b3; // Darker shade on hover
+ }
+ 
+ .lButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+ }
+ 
