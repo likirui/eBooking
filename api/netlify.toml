@@ -1,0 +1,3 @@
+[build]
+ command = "echo 'Building Functions'"
+ functions = "functions"

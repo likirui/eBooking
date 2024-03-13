@@ -7,6 +7,7 @@ import hotelsRoute from "./routes/hotels.js";
 import roomsRoute from "./routes/rooms.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import serverless from 'serverless-http';
 
 const app = express();
 dotenv.config();
@@ -45,7 +46,11 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(8800, () => {
-  connect();
-  console.log("Connected to backend.");
-});
+// Wrap the Express app with serverless-http
+exports.handler = serverless(app);
+
+// Remove the app.listen call since it's not needed for serverless functions
+// app.listen(8800, () => {
+//   connect();
+//   console.log("Connected to backend.");
+// });
